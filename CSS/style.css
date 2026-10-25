@@ -200,6 +200,10 @@ a.cta-btn {
   border-radius: 5px;
 }
 
+.inner-wrapper p {
+  margin-bottom: 2rem;
+}
+
 .inner-wrapper .container .text {
   width: 50%;
   /* text-align: justify; */
@@ -215,7 +219,7 @@ a.cta-btn {
   left: 0;
   bottom: 0;
   top: 0;
-  background-color: #0076b52f;
+  background-color: #3b4246b0;
 }
 
 .image-holer {
@@ -224,8 +228,8 @@ a.cta-btn {
   align-items: center;     /* Vertically */
 
   width: 70%;
-  height: 400px;
-  margin: 15% auto;
+  height: 700px;
+  margin: 5%  auto;
 }
 
 footer {
