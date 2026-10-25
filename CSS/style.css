@@ -19,7 +19,7 @@ header {
   height: 90vh;
 }
 
-header  nav {
+header nav {
   display: flex;
   justify-content: space-between;
 }
@@ -65,11 +65,83 @@ header nav ul li .active {
   display: none;
 }
 
+.home-text {
+  padding: 3rem;
+}
+
+.home-text h1 {
+  text-align: left;
+  margin-top: 100px;
+  color: white;
+
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 40px;
+  color: white;
+}
+
+.inner-wrapper h2 {
+  text-align: center;
+}
+
+.inner-wrapper p {
+  margin-top: 10px;
+  text-align: justify;
+
+}
+
+.aboutus-header h1 {
+  font-size: 70px;
+}
+
+.inner-wrapper .gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: auto;
+  text-align: center;
+
+}
+.gallery .image{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+
+}
+
+.gallery .image img {
+  width: 200px;
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s all;
+  @media(max-width:750px){
+    width: 100%;
+  }
+}
+.gallery .image img:hover{
+  transform: scale(120%);
+}
+
+a.cta-btn {
+  background-color: darksalmon;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 .wrapper {
   margin: auto;
   /* background-color: red; */
   width: 1000px;
-  height: 200vh;
+  height: auto;
 }
 
 .categories {
@@ -272,22 +344,27 @@ footer .social-media ul a .fa-linkedin {
 
 
 /* --------@MEDIA-------- */
-@media (min-width: 901px){
-  .mobile-menu{
+@media (min-width: 901px) {
+  .mobile-menu {
     display: none;
   }
 
 }
+
 @media (max-width: 900px) {
   .categories {
     width: 100%;
   }
+
   .nav-menu ul li {
     display: none;
   }
 
-  .categories {
+  .home-text h1 {
+    font-size: 20px;
+  }
 
+  .categories {
     background-color: #333;
     /* padding: 1rem; */
     border-bottom-left-radius: 0px;
