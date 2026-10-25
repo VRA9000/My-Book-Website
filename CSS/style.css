@@ -69,12 +69,7 @@ header nav ul li .active {
   padding: 3rem;
 }
 
-.home-text h1 {
-  text-align: left;
-  margin-top: 100px;
-  color: white;
 
-}
 
 header h1 {
   text-align: center;
@@ -455,7 +450,7 @@ footer .social-media ul a .fa-linkedin {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 60vh;
   }
 
   .nav-menu nav ul li {
@@ -467,26 +462,19 @@ footer .social-media ul a .fa-linkedin {
     display: flex;
   }
 
-  /* .mobile-menu {
-    display: block;
-    position: absolute;
-    right: 0;
-    background-color: darksalmon;
-    padding: 1rem;
-    z-index: 1;
-    width: 100%;
-    height: 300px;
-  }
-
-  .mobile-menu nav ul {
+  .image-holer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    /* Horizontally */
+    align-items: center;
+    /* Vertically */
+
+    width: 80%;
+    height: 200px;
+    margin: 5% auto;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px 3px rgb(87, 87, 87);
   }
-
-  .mobile-menu nav ul li a:hover {
-    color: #333;
-
-  } */
 
   .menu-container {
     position: relative;
