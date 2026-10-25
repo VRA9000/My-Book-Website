@@ -227,8 +227,8 @@ a.cta-btn {
   justify-content: center; /* Horizontally */
   align-items: center;     /* Vertically */
 
-  width: 70%;
-  height: 700px;
+  width: 50%;
+  height: 500px;
   margin: 5%  auto;
 }
 
