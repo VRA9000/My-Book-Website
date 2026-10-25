@@ -17,6 +17,9 @@ closeMenuBtn.addEventListener('click', () => {
 });
 
 
+
+
+/* window.addEventListener("load", init); */
 function init(){
   const img = document.querySelectorAll('.gallery img');
   for(let i = 0; i < img.length; i++){
@@ -24,7 +27,7 @@ function init(){
       getImage(this)
     })
   }
-
+   
 }
 
 
@@ -43,10 +46,7 @@ function getImage(el) {
     document.body.removeChild(backdropShadow);
   }
 
- 
-  
   document.body.appendChild(backdropShadow);
   backdropShadow.appendChild(imageHolder);
-
 
 }
