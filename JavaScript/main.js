@@ -2,8 +2,8 @@
 
 
 const menuBtn = document.querySelector('.fa-bars');
-const mobileMenu = document.querySelector('.menu-container');
-const closeMenuBtn = document.querySelector('.fa-circle-xmark')
+const mobileMenu = document.querySelector('.menu-container nav');
+const closeMenuBtn = document.querySelector('.fa-circle-xmark');
 
 menuBtn.addEventListener('click', function() {
    mobileMenu.style.display = "block";

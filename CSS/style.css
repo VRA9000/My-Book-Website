@@ -224,7 +224,7 @@ footer .social-media ul a .fa-linkedin {
 }
 
 .mobile-menu nav {
-  /* display: none; */
+  display: none;
   text-align: center;
   position: absolute;
   right: 0;
