@@ -53,10 +53,10 @@ function getImage(el) {
 const form = document.querySelector('#form');
 const submitBtn = document.querySelector('#submit_btn');
 
-const fnameInputEl = document.querySelector('#fname_input');
-const lnameInputEl = document.querySelector('#lname_input');
-const emailInputEl = document.querySelector('#email_input');
-const phoneInputEl = document.querySelector('#phone_input');
+const fnameInputEl = document.querySelector('#fname_input').trim();
+const lnameInputEl = document.querySelector('#lname_input').trim();
+const emailInputEl = document.querySelector('#email_input').trim();
+const phoneInputEl = document.querySelector('#phone_input').trim();
 const textareaInputEl = document.querySelector('#textarea_input');
 
 const fnameErrorEl = document.querySelector('#fname_error_message');
