@@ -78,6 +78,10 @@ header h1 {
   color: white;
 }
 
+.fa-cart-arrow-down {
+  cursor: pointer;
+}
+
 .inner-wrapper h2 {
   text-align: center;
 }
@@ -106,11 +110,85 @@ header h1 {
   margin-top: 40px;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  column-gap: 4rem;
+
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.form-container h4 {
+  margin-bottom: 1rem;
+}
+.form-container hr {
+  margin-bottom: 2rem;
+}
+.contact-container form input {
+  padding: .4rem;
+  outline: none;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+}
+
+.contact-container form #email_input,
+#phone_input {
+  width: 60%;
+
+}
+
+.contact-container iframe {
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-container .name {
+  display: flex;
+  gap: 1rem;
+}
+.contact-container #submit_btn{
+  width: 100%;
+  padding: .5rem 3rem;
+  background-color: white ;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s all;
+  font-weight: 700;
+}
+.contact-container textarea {
+  border-radius: 5px;
+  padding: .5rem;
+}
+.contact-container #submit_btn:hover{
+  background-color:greenyellow;
+}
+.success{
+  color: green;
+  font-size: 14px;
+  border: 1px solid lightblue;
+  padding: .5rem 3rem;
+  width: 100%;
+  text-align: center;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
 .gallery .image {
   width: 200px;
   height: 200px;
   overflow: hidden;
 
+}
+.error {
+  font-size: 12px;
+  color: red;
 }
 
 .gallery .image img {
@@ -183,11 +261,12 @@ a.cta-btn {
   /* padding: 1rem; */
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+
 }
 
 .categories ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 
 }
@@ -250,6 +329,10 @@ a.cta-btn {
   bottom: 0;
   top: 0;
   background-color: #3b4246b0;
+}
+
+.contact-us h1 {
+  font-size: 70px;
 }
 
 .image-holer {
@@ -489,6 +572,17 @@ footer .social-media ul a .fa-linkedin {
 
   .menu-container .fa-circle-xmark:hover {
     font-size: 20px;
+  }
+
+  .contact-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-container .name{
+    display: flex;
+    flex-direction: column;
   }
 
   .wrapper {
