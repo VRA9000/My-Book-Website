@@ -1,4 +1,4 @@
-/* 'use strict'; */
+'use strict'; 
 
 
 const menuBtn = document.querySelector('.fa-bars');
