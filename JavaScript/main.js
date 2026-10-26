@@ -67,34 +67,10 @@ const textareaErrorEl = document.querySelector('#textarea_error_message');
 
 const successMsg = document.querySelector('#success');
 
-form.addEventListener('submit', async (e) => {
+form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-            alert("Success! Your message has been sent.");
-            form.reset();
-        } else {
-            alert("Error: " + data.message);
-        }
-
-    } catch (error) {
-        alert("Something went wrong. Please try again.");
-    } finally {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }
-     
-
-  const formData = new FormData(form);
-  formData.append("access_key", "bceb5772-dfcd-4111-93f1-0577315be8da");
+  
 
   if (fnameInputEl.value == '') {
     fnameErrorEl.textContent = "Please enter your First Name";
